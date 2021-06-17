@@ -1,1 +1,0 @@
-SELECT books.title FROM books INNER JOIN publisher ON books.publisher = publisher.id AND publisher.name = "Prentice Hall";
