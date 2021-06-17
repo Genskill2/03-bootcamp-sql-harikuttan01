@@ -32,23 +32,23 @@ INSERT INTO books (title,publisher) SELECT 'The Great War for Civilisation',id F
 
 --------------------------------------------------------------------
 
-INSERT INTO book_subjects (book,subject) SELECT (SELECT id FROM books WHERE id =1) AS book, (SELECT id FROM subjects WHERE id = 1);
-INSERT INTO book_subjects (book,subject) SELECT (SELECT id FROM books WHERE id =1) AS book, (SELECT id FROM subjects WHERE id = 2);
-INSERT INTO book_subjects (book,subject) SELECT (SELECT id FROM books WHERE id =1) AS book, (SELECT id FROM subjects WHERE id = 3);
-INSERT INTO book_subjects (book,subject) SELECT (SELECT id FROM books WHERE id =2) AS book, (SELECT id FROM subjects WHERE id = 4);
-INSERT INTO book_subjects (book,subject) SELECT (SELECT id FROM books WHERE id =2) AS book, (SELECT id FROM subjects WHERE id = 1);
-INSERT INTO book_subjects (book,subject) SELECT (SELECT id FROM books WHERE id =3) AS book, (SELECT id FROM subjects WHERE id = 2);
-INSERT INTO book_subjects (book,subject) SELECT (SELECT id FROM books WHERE id =3) AS book, (SELECT id FROM subjects WHERE id = 1);
-INSERT INTO book_subjects (book,subject) SELECT (SELECT id FROM books WHERE id =4) AS book, (SELECT id FROM subjects WHERE id = 1);
-INSERT INTO book_subjects (book,subject) SELECT (SELECT id FROM books WHERE id =4) AS book, (SELECT id FROM subjects WHERE id = 5);
-INSERT INTO book_subjects (book,subject) SELECT (SELECT id FROM books WHERE id =5) AS book, (SELECT id FROM subjects WHERE id = 1);
-INSERT INTO book_subjects (book,subject) SELECT (SELECT id FROM books WHERE id =5) AS book, (SELECT id FROM subjects WHERE id = 6);
-INSERT INTO book_subjects (book,subject) SELECT (SELECT id FROM books WHERE id =6) AS book, (SELECT id FROM subjects WHERE id = 6);
-INSERT INTO book_subjects (book,subject) SELECT (SELECT id FROM books WHERE id =6) AS book, (SELECT id FROM subjects WHERE id = 7);
-INSERT INTO book_subjects (book,subject) SELECT (SELECT id FROM books WHERE id =7) AS book, (SELECT id FROM subjects WHERE id = 5);
-INSERT INTO book_subjects (book,subject) SELECT (SELECT id FROM books WHERE id =7) AS book, (SELECT id FROM subjects WHERE id = 8);
-INSERT INTO book_subjects (book,subject) SELECT (SELECT id FROM books WHERE id =8) AS book, (SELECT id FROM subjects WHERE id = 8);
-INSERT INTO book_subjects (book,subject) SELECT (SELECT id FROM books WHERE id =8) AS book, (SELECT id FROM subjects WHERE id = 9);
+INSERT INTO books_subjects (book,subject) SELECT (SELECT id FROM books WHERE id =1) AS book, (SELECT id FROM subjects WHERE id = 1);
+INSERT INTO books_subjects (book,subject) SELECT (SELECT id FROM books WHERE id =1) AS book, (SELECT id FROM subjects WHERE id = 2);
+INSERT INTO books_subjects (book,subject) SELECT (SELECT id FROM books WHERE id =1) AS book, (SELECT id FROM subjects WHERE id = 3);
+INSERT INTO books_subjects (book,subject) SELECT (SELECT id FROM books WHERE id =2) AS book, (SELECT id FROM subjects WHERE id = 4);
+INSERT INTO books_subjects (book,subject) SELECT (SELECT id FROM books WHERE id =2) AS book, (SELECT id FROM subjects WHERE id = 1);
+INSERT INTO books_subjects (book,subject) SELECT (SELECT id FROM books WHERE id =3) AS book, (SELECT id FROM subjects WHERE id = 2);
+INSERT INTO books_subjects (book,subject) SELECT (SELECT id FROM books WHERE id =3) AS book, (SELECT id FROM subjects WHERE id = 1);
+INSERT INTO books_subjects (book,subject) SELECT (SELECT id FROM books WHERE id =4) AS book, (SELECT id FROM subjects WHERE id = 1);
+INSERT INTO books_subjects (book,subject) SELECT (SELECT id FROM books WHERE id =4) AS book, (SELECT id FROM subjects WHERE id = 5);
+INSERT INTO books_subjects (book,subject) SELECT (SELECT id FROM books WHERE id =5) AS book, (SELECT id FROM subjects WHERE id = 1);
+INSERT INTO books_subjects (book,subject) SELECT (SELECT id FROM books WHERE id =5) AS book, (SELECT id FROM subjects WHERE id = 6);
+INSERT INTO books_subjects (book,subject) SELECT (SELECT id FROM books WHERE id =6) AS book, (SELECT id FROM subjects WHERE id = 6);
+INSERT INTO books_subjects (book,subject) SELECT (SELECT id FROM books WHERE id =6) AS book, (SELECT id FROM subjects WHERE id = 7);
+INSERT INTO books_subjects (book,subject) SELECT (SELECT id FROM books WHERE id =7) AS book, (SELECT id FROM subjects WHERE id = 5);
+INSERT INTO books_subjects (book,subject) SELECT (SELECT id FROM books WHERE id =7) AS book, (SELECT id FROM subjects WHERE id = 8);
+INSERT INTO books_subjects (book,subject) SELECT (SELECT id FROM books WHERE id =8) AS book, (SELECT id FROM subjects WHERE id = 8);
+INSERT INTO books_subjects (book,subject) SELECT (SELECT id FROM books WHERE id =8) AS book, (SELECT id FROM subjects WHERE id = 9);
 
 --------------------------------------------------------------------
 

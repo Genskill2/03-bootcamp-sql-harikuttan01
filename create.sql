@@ -1,7 +1,7 @@
 DROP TABLE IF EXISTS publisher;
 DROP TABLE IF EXISTS books;
 DROP TABLE IF EXISTS subjects;
-DROP TABLE IF EXISTS book_subjects;
+DROP TABLE IF EXISTS books_subjects;
 
 CREATE TABLE publisher(
     id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
@@ -23,7 +23,7 @@ CREATE TABLE subjects(
     name text
 );
 
-CREATE TABLE book_subjects(
+CREATE TABLE books_subjects(
     book INTEGER NOT NULL,
     subject INTEGER NOT NULL,
     FOREIGN KEY (book) REFERENCES books(id),
